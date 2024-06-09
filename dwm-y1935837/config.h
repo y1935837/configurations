@@ -61,9 +61,9 @@ static const char *suspend[] = { "zzz", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,		          XK_s,      spawn,	         {.v = suspend } },
+	{ MODKEY|ShiftMask,		XK_s,      spawn,	   {.v = suspend } },
 	{ MODKEY,                       XK_a,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,             		      XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_h,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = -1 } },
@@ -73,7 +73,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,  		                  XK_c,      killclient,     {0} },
+	{ MODKEY,  		        XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_i,      setlayout,      {.v = &layouts[2]} },
