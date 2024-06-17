@@ -62,7 +62,7 @@ static const char *screenshot[] = { "/usr/local/bin/screenshot", NULL };
 
 static const Key keys[] = {
   /* modifier                     key        function        argument */
-  { MODKEY|ShiftMask,	          XK_s,      spawn,	         {.v = suspend } },
+  { MODKEY|ShiftMask,	          XK_s,      spawn,	     {.v = suspend } },
   { MODKEY,                       XK_a,      spawn,          {.v = dmenucmd } },
   { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
   { MODKEY,                       XK_m,      spawn,          {.v = screenshot } },
